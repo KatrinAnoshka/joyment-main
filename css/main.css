@@ -18,7 +18,7 @@ a {
 }
 header li:hover a, .bottom-right .tel:hover, .bottom-right-2 .tel-2:hover {
     color: #dac12b;
-    opacity: 0.6;
+    opacity: 1;
     text-decoration: none;
 }
 .hidden {
@@ -866,6 +866,7 @@ section h1 {
 }
 .contacts-item a:hover {
     color: #FEE938;
+    text-decoration: none;
 }
 .cnt-1 {
     padding-right: 116px;
@@ -1147,7 +1148,7 @@ form .button_wrap {
     align-items: center;
     cursor: pointer;
 }
-.section-menu-ls .section-menu .sct-menu-wrap img {
+.section-menu-ls .sct-menu-wrap img {
     padding-right: 15px;
 }
 .section-menu-ls .sct-menu-wrap span {
@@ -1170,13 +1171,14 @@ form .button_wrap {
     position: relative;
     z-index: 1;
 }
-section.section-lzt-descr h2 {
+
+section.section-lzt-descr h2, .section-slider-ls h2, .section-other-services h2, .section-price h2 {
     font-size: 32px;
     font-weight: 400;
     color: #fff;
     text-align: center;
 }
-.section-lzt-descr .section-wrap-top, .section-lzt-descr .section-wrap-bottom, .section-lzt-descr .serices-wrap-top, .section-lzt-descr .serices-wrap-bottom {
+.section-lzt-descr .section-wrap-top, .section-lzt-descr .section-wrap-bottom, .section-lzt-descr .serices-wrap-top, .section-lzt-descr .serices-wrap-bottom, .section-other-services .serices-wrap-top, .section-other-services .serices-wrap-bottom {
     display: -moz-flex;
     display: -ms-flex;
     display: -o-flex;
@@ -1459,6 +1461,7 @@ section.section-lzt-descr h2 {
 .section-scripts-ls .scripts-wrap p {
     margin-bottom: 0;
     padding-left: 48px;
+    color: #fff;
 }
 .section-scripts-ls .scripts-item {
     display: -moz-flex;
@@ -1681,7 +1684,7 @@ section.section-lzt-descr h2 {
     -ms-flex-align: center;
     align-items: center;
 }
-.header-bg-at a.booked {
+.header-bg-at a.booked, .price-table a.booked {
     display: block;
     width: 235px;
     height: 71px;
@@ -1755,7 +1758,7 @@ section.section-lzt-descr h2 {
     align-items: center;
     cursor: pointer;
 }
-.section-menu .sct-menu-wrap img {
+.section-menu-at .sct-menu-wrap img {
     padding-right: 15px;
 }
 .section-menu-at .sct-menu-wrap span {
@@ -1765,6 +1768,7 @@ section.section-lzt-descr h2 {
 .section-menu-at .section-menu-wrap a:hover .sct-menu-wrap span {
     color: #fee938;
     opacity: 1;
+    text-decoration: none;
 }
 
 /*Section-ection-at*/
@@ -1777,13 +1781,14 @@ section.section-lzt-descr h2 {
     position: relative;
     z-index: 1;
 }
-section.section-ection-at h2 {
+section.section-ection-at h2, .section-scripts-ls h2 {
     font-size: 32px;
     font-weight: 400;
     color: #fff;
     text-align: center;
 }
-.section-ection-at .section-wrap-top, .section-ection-at .section-wrap-bottom, .section-ection-at .serices-wrap-top, .section-ection-at .serices-wrap-bottom {
+.section-ection-at .section-wrap-top, .section-ection-at .section-wrap-bottom, .section-ection-at .serices-wrap-top, .section-ection-at .serices-wrap-bottom,
+.section-rules-at .serices-wrap-top {
     display: -moz-flex;
     display: -ms-flex;
     display: -o-flex;
@@ -1851,7 +1856,7 @@ section.section-ection-at h2 {
     border-bottom: 2px solid #3BC0C7;
     margin-right: 55px;
 }
-.section-ection-at .section-item {
+.section-ection-at .section-item, .section-rules-at .section-item {
     display: -moz-flex;
     display: -ms-flex;
     display: -o-flex;
@@ -1872,12 +1877,12 @@ section.section-ection-at h2 {
     -ms-flex-pack: start;
     justify-content: flex-start;
 }
-.section-ection-at .section-item img {
+.section-ection-at .section-item img, .section-rules-at .section-item img {
     width: 50%;
 }
-.section-ection-at .img-winner {
+/*.section-ection-at .img-winner {
     width: 90%!important;
-}
+}*/
 .section-ection-at .section-item-winner {
     padding-top: 70px;
 }
@@ -1893,6 +1898,12 @@ section.section-ection-at h2 {
 
 /*Section-rules-at*/
 
+section.section-rules-at h2, .section-shedule-at h2 {
+    font-size: 32px;
+    font-weight: 400;
+    color: #fff;
+    text-align: center;
+}
 .section-rules-at {
     max-width: 1245px;
     width: auto;
@@ -1909,6 +1920,9 @@ section.section-ection-at h2 {
 }
 .section-rules-at .img-group {
     width: 55%!important;
+}
+.section-rules-at .p-center {
+    padding-top: 28px!important;
 }
 .section-rules-at .p-group {
     padding-top: 55px!important;
