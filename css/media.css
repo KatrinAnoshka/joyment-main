@@ -297,8 +297,12 @@
 		display: block;
 	}
 	/*Section-1, Section-2*/
-	.section-item {
+	.serices-wrap-top .section-item,
+	.serices-wrap-bottom .section-item {
 		width: 51%;
+	}
+	.section-other-services .serices-wrap-bottom {
+		padding: 0;
 	}
 	.item-game {
 		padding-right: 0;
@@ -400,7 +404,7 @@
 		align-items: center;
 	}
 	.section-lzt-descr img {
-		width: 35%;
+		width: 53%;
 		padding-top: 65px;
 	}
 	/*Section-other-services*/
@@ -880,7 +884,7 @@
 		font-size: 23px;
 	}
 	.section-lzt-descr img {
-		width: 28%;
+		width: 53%;
 		padding-top: 42px;
 	}
 	/*Section-slider-ls*/
