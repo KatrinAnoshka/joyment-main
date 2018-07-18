@@ -145,6 +145,9 @@
 	.price-table {
 		width: 752px;
 	}
+	.section-price a.booked {
+		width: 183px;
+	}
 
 	/*************************Action_tactics*************************/
 
@@ -177,8 +180,11 @@
 	.section-slider-ev .span-3-2 {
 		display: none!important;
 	}
+	.section-slider-ev .span3 {
+		width: 50%;
+	}
 	.section-slider-ev .fluid {
-		width: 45%;
+		width: 80%;
 	}
 	.section-slider-ev .fluid .slider-title {
 		left: 15%;
@@ -380,10 +386,10 @@
 		margin-top: 40px;
 	}
 	/*Section-lzt-descr*/
-	.section-lzt-descr .section-wrap-top, .section-lzt-descr .section-wrap-bottom {
+	.section-lzt-descr .section-wrap-top, .section-lzt-descr .section-wrap-bottom, .section-other-services .serices-wrap-bottom {
 		padding-top: 0;
 	}
-	.section-lzt-descr .section-wrap-top, .section-lzt-descr .section-wrap-bottom, .section-lzt-descr .serices-wrap-top, .section-lzt-descr .serices-wrap-bottom {
+	.section-lzt-descr .section-wrap-top, .section-lzt-descr .section-wrap-bottom, .section-other-services .serices-wrap-top, .section-other-services .serices-wrap-bottom {
 		-moz-flex-direction: column;
 		-ms-flex-direction: column;
 		-o-flex-direction: column;
@@ -483,9 +489,7 @@
 	.section-price h2 {
 		margin-bottom: 37px;
 	}
-	.section-price a.booked {
-		width: 183px;
-	}
+	
 	.price-table {
 		width: 650px;
 	}
@@ -594,9 +598,11 @@
 	}
 	.section-slider-ev .fluid .row-fluid .span3 {
 		width: 100%;
-		height: 300px;
+		height: auto;
 		margin-left: 0;
 		transform: scale(1.5);
+		justify-content: center;
+    	display: flex;
 	}
 	.section-slider-ev .carousel-control {
 		font-size: 84px;
@@ -655,6 +661,12 @@
 	}
 	.dwnl-presentation, .zayavka p {
 		padding-top: 45px!important;
+	}
+	.dwnl-presentation {
+		margin-bottom: 50px;
+	}
+	.zayavka a {
+		margin-right: 0!important;
 	}
 }
 @media only screen and (max-width: 670px) {
@@ -802,6 +814,7 @@
 	.help-item-2 p {
 		padding-top: 15px;
 		font-size: 13px;
+		text-align: center;
 	}
 	.dwnl-presentation span {
 		font-size: 13px;

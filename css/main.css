@@ -1074,7 +1074,7 @@ form .button_wrap {
     -ms-flex-align: center;
     align-items: center;
 }
-.header-bg-ls a.booked {
+.header-bg-ls a.booked, .table-item-bottom a.booked {
     display: block;
     width: 235px;
     height: 71px;
@@ -1089,7 +1089,7 @@ form .button_wrap {
     cursor: pointer;
     text-align: center;
 }
-.header-bg-ls a.booked:hover {
+.header-bg-ls a.booked:hover, .table-item-bottom a.booked:hover {
     -webkit-box-shadow: 1px 2px 10px #c3b223;
     box-shadow: 1px 2px 10px #c3b223;
     opacity: 1;
@@ -1155,11 +1155,11 @@ form .button_wrap {
     font-size: 15px;
     color: #fff;
 }
-.section-menu-ls .section-menu-wrap a:hover .sct-menu-wrap span {
-    color: #fee938;
-}
+
 .section-menu-ls .section-menu-wrap a:hover {
     opacity: 1 !important;
+    color: #fee938;
+    text-decoration: none;
 }
 /*Section-lzt-descr*/
 
@@ -1230,18 +1230,22 @@ section.section-lzt-descr h2, .section-slider-ls h2, .section-other-services h2,
 }
 /*Section-slider*/
 
-.section-slider-ls {
+.section-slider-ls,
+.hall-wrap {
     margin-top: 95px;
 }
-.section-slider-ls img {
+.section-slider-ls img,
+.hall-wrap img {
     max-width: 100%;
 }
-.section-slider-ls a {
+.section-slider-ls a,
+.hall-wrap a {
     -webkit-transition: all 150ms ease;
     -o-transition: all 150ms ease;
     transition: all 150ms ease;
 }
-.section-slider-ls a:hover {
+.section-slider-ls a:hover,
+.hall-wrap a:hover {
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
     /* IE 8 */
     filter: alpha(opacity=50);
@@ -1251,7 +1255,8 @@ section.section-lzt-descr h2, .section-slider-ls h2, .section-other-services h2,
 }
 /* Container */
 
-.section-slider-ls .container-fluid {
+.section-slider-ls .container-fluid,
+.hall-wrap .container-fluid {
     background: transparent;
     margin: 56px auto 10px;
     padding: 20px 40px 0;
@@ -1259,24 +1264,30 @@ section.section-lzt-descr h2, .section-slider-ls h2, .section-other-services h2,
 }
 /* Thumbnail Box */
 
-.section-slider-ls .caption h4 {
+.section-slider-ls .caption h4,
+.hall-wrap .caption h4 {
     font-size: 1rem;
     color: #444;
 }
-.section-slider-ls .caption p {
+.section-slider-ls .caption p,
+.hall-wrap .caption p {
     font-size: 0.75rem;
     color: #999;
 }
-.section-slider-ls .btn.btn-mini {
+.section-slider-ls .btn.btn-mini,
+.hall-wrap .btn.btn-mini {
     font-size: 0.63rem;
 }
-.section-slider-ls .carousel-inner>.item>img {
+.section-slider-ls .carousel-inner>.item>img,
+.hall-wrap .carousel-inner>.item>img {
     margin: 0 auto;
 }
-.section-slider-ls .carousel {
+.section-slider-ls .carousel,
+.hall-wrap .carousel {
     line-height: initial;
 }
-.section-slider-ls .row-fluid .thumbnails {
+.section-slider-ls .row-fluid .thumbnails,
+.hall-wrap .row-fluid .thumbnails {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1288,16 +1299,19 @@ section.section-lzt-descr h2, .section-slider-ls h2, .section-other-services h2,
     -ms-flex-pack: center;
     justify-content: center;
 }
-.section-slider-ls .thumbnail {
+.section-slider-ls .thumbnail,
+.hall-wrap .thumbnail {
     border: none;
 }
 /* Carousel Control */
 
-.section-slider-ls .control-box {
+.section-slider-ls .control-box,
+.hall-wrap .control-box {
     text-align: center;
     width: 100%;
 }
-.section-slider-ls .carousel-control {
+.section-slider-ls .carousel-control,
+.hall-wrap .carousel-control {
     background: transparent;
     border: 0px;
     border-radius: 0px;
@@ -1313,7 +1327,8 @@ section.section-lzt-descr h2, .section-slider-ls h2, .section-other-services h2,
     color: #fff31b;
     cursor: pointer;
 }
-.section-slider-ls .carousel-control:hover, .section-slider-ls .carousel-control:focus {
+.section-slider-ls .carousel-control:hover, .section-slider-ls .carousel-control:focus,
+.hall-wrap .carousel-control:hover, .hall-wrap .carousel-control:focus {
     color: #fff31b;
     text-decoration: none;
     opacity: 1;
@@ -1326,18 +1341,21 @@ section.section-lzt-descr h2, .section-slider-ls h2, .section-other-services h2,
     margin: 0 auto;
     padding: 60px 26px 40px;
 }
+.section-other-services .p-center {
+    padding-top: 28px!important;
+}
 .section-other-services .serices-wrap-bottom {
     padding: 80px 212px 0;
 }
 /*Holiday*/
 
-.section-other-services .holiday {
+.holiday {
     padding: 86px 10px 0;
     max-width: 1040px;
     width: auto;
     margin: 0 auto;
 }
-.section-other-services .holiday-wrap {
+.holiday-wrap {
     display: -moz-flex;
     display: -ms-flex;
     display: -o-flex;
@@ -1358,7 +1376,7 @@ section.section-lzt-descr h2, .section-slider-ls h2, .section-other-services h2,
     -ms-flex-align: center;
     align-items: center;
 }
-.section-other-services .holiday-item-1 {
+.holiday-item-1 {
     width: 590px;
     height: 182px;
     border-radius: 10px;
@@ -1378,21 +1396,21 @@ section.section-lzt-descr h2, .section-slider-ls h2, .section-other-services h2,
     -ms-flex-pack: center;
     justify-content: center;
 }
-.section-other-services .holiday-item-1 p {
+.holiday-item-1 p {
     font-size: 24px;
     font-weight: 300;
     color: #fff;
     text-align: center;
     vertical-align: middle;
 }
-.section-other-services .holiday-item-1 a {
+.holiday-item-1 a {
     color: #FEE938;
     text-decoration: underline;
 }
-.section-other-services .holiday-item-1 a:hover {
+.holiday-item-1 a:hover {
     text-decoration: none;
 }
-.section-other-services .holiday-item-2 {
+.holiday-item-2 {
     display: -moz-flex;
     display: -ms-flex;
     display: -o-flex;
@@ -1410,21 +1428,21 @@ section.section-lzt-descr h2, .section-slider-ls h2, .section-other-services h2,
     -ms-flex-align: center;
     align-items: center;
 }
-.section-other-services .holiday-item-2 p {
+.holiday-item-2 p {
     text-align: center;
     margin-top: 10px;
 }
-.section-other-services .safety {
+.safety {
     width: 186px;
     height: 186px;
     border: 2px solid #3BC0C7;
     border-radius: 50%;
 }
-.section-other-services .safety img {
+.safety img {
     padding-top: 68px;
     padding-left: 21px;
 }
-.section-other-services .holiday-item-2, .section-other-services .scripts-wrap p {
+.holiday-item-2,  .section-other-services .scripts-wrap p {
     font-size: 15px;
     color: #fff;
     padding-left: 122px;
@@ -1684,7 +1702,9 @@ section.section-lzt-descr h2, .section-slider-ls h2, .section-other-services h2,
     -ms-flex-align: center;
     align-items: center;
 }
-.header-bg-at a.booked, .price-table a.booked {
+.header-bg-at a.booked, 
+.price-table a.booked,
+.zayavka a.booked {
     display: block;
     width: 235px;
     height: 71px;
@@ -1699,7 +1719,8 @@ section.section-lzt-descr h2, .section-slider-ls h2, .section-other-services h2,
     cursor: pointer;
     text-align: center;
 }
-.header-bg-at a.booked:hover {
+.header-bg-at a.booked:hover,
+.zayavka a.booked:hover {
     -webkit-box-shadow: 1px 2px 10px #c3b223;
     box-shadow: 1px 2px 10px #c3b223;
     opacity: 1;
@@ -1765,9 +1786,9 @@ section.section-lzt-descr h2, .section-slider-ls h2, .section-other-services h2,
     font-size: 15px;
     color: #fff;
 }
-.section-menu-at .section-menu-wrap a:hover .sct-menu-wrap span {
+.section-menu-at .section-menu-wrap a:hover {
+    opacity: 1 !important;
     color: #fee938;
-    opacity: 1;
     text-decoration: none;
 }
 
@@ -1781,7 +1802,12 @@ section.section-lzt-descr h2, .section-slider-ls h2, .section-other-services h2,
     position: relative;
     z-index: 1;
 }
-section.section-ection-at h2, .section-scripts-ls h2 {
+section.section-ection-at h2, 
+.section-scripts-ls h2,
+.your-party h2,
+.section-more-photos h2,
+.help h2,
+.section-slider-ev h2 {
     font-size: 32px;
     font-weight: 400;
     color: #fff;
@@ -2102,18 +2128,22 @@ section.section-rules-at h2, .section-shedule-at h2 {
 
 /*Section-slider-ev*/
 
-.section-slider-ev {
+.section-slider-ev, 
+.section-more-photos {
     margin-top: 95px;
 }
-.section-slider-ev img {
+.section-slider-ev img,
+.section-more-photos img {
     max-width: 100%;
 }
-.section-slider-ev a {
+.section-slider-ev a, 
+.section-more-photos a {
     -webkit-transition: all 150ms ease;
     -o-transition: all 150ms ease;
     transition: all 150ms ease;
 }
-.section-slider-ev a:hover {
+.section-slider-ev a:hover,
+.section-more-photosv a:hover {
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
     /* IE 8 */
     filter: alpha(opacity=50);
@@ -2123,7 +2153,7 @@ section.section-rules-at h2, .section-shedule-at h2 {
 }
 /* Container */
 
-.section-slider-ev .container-fluid {
+.section-slider-ev .container-fluid, .section-more-photos .container-fluid {
     background: transparent;
     margin: 56px auto 10px;
     padding: 20px 40px 0;
@@ -2135,20 +2165,25 @@ section.section-rules-at h2, .section-shedule-at h2 {
     font-size: 1rem;
     color: #444;
 }
-.section-slider-ev .caption p {
+.section-slider-ev .caption p,
+.section-more-photos .caption p {
     font-size: 0.75rem;
     color: #999;
 }
-.section-slider-ev .btn.btn-mini {
+.section-slider-ev .btn.btn-mini,
+.section-more-photos .btn.btn-mini {
     font-size: 0.63rem;
 }
-.section-slider-ev .carousel-inner>.item>img {
+.section-slider-ev .carousel-inner>.item>img,
+.section-more-photos .carousel-inner>.item>img {
     margin: 0 auto;
 }
-.section-slider-ev .carousel {
+.section-slider-ev .carousel,
+.section-more-photos .carousel {
     line-height: initial;
 }
-.section-slider-ev .row-fluid .thumbnails {
+.section-slider-ev .row-fluid .thumbnails,
+.section-more-photos .row-fluid .thumbnails {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -2160,16 +2195,17 @@ section.section-rules-at h2, .section-shedule-at h2 {
     -ms-flex-pack: center;
     justify-content: center;
 }
-.section-slider-ev .thumbnail {
+.section-slider-ev .thumbnail,
+.section-more-photos .thumbnail {
     border: none;
 }
 /* Carousel Control */
 
-.section-slider-ev .control-box {
+.section-slider-ev .control-box, .section-more-photos .control-box {
     text-align: center;
     width: 100%;
 }
-.section-slider-ev .carousel-control {
+.section-slider-ev .carousel-control, .section-more-photos .carousel-control {
     background: transparent;
     border: 0px;
     border-radius: 0px;
@@ -2185,7 +2221,8 @@ section.section-rules-at h2, .section-shedule-at h2 {
     color: #fff31b;
     cursor: pointer;
 }
-.section-slider-ev .carousel-control:hover, .section-slider-ev .carousel-control:focus {
+.section-slider-ev .carousel-control:hover, .section-slider-ev .carousel-control:focus,
+.section-more-photos .carousel-control:hover, .section-more-photos .carousel-control:focus {
     color: #fff31b;
     text-decoration: none;
     opacity: 1;
